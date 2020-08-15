@@ -49,7 +49,7 @@ export class Example extends Component{
             })
             console.log(this.state);
         } catch (error) {
-            
+
         }
     }
 
@@ -63,7 +63,7 @@ export class Example extends Component{
             }
         })
     }
-    
+
     async handleSubmit(e){
         e.preventDefault()
         try {
@@ -97,12 +97,13 @@ export class Example extends Component{
                 <div className="row justify-content-center">
                     <div className="col-md-12-m-t-md">
                         {/* mostramos el valos del state en money */}
+                        mostrar dinero
                         <p className="title"> $ {this.state.money} </p>
                     </div>
                     <div className="col-md-12">
                         {/* Le pasamos los props al componente */}
-                        <TransferForm 
-                            form={this.state.form} 
+                        <TransferForm
+                            form={this.state.form}
                             onChange={this.handleChange} // le pasamos la funcion
                             onSubmit={this.handleSubmit} // le pasamos la funcion
                         />
