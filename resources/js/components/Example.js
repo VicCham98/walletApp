@@ -94,6 +94,9 @@ export class Example extends Component{
     render(){
         return (
             <div className="container">
+                <div>
+                    mensaje de alerta
+                </div>
                 <div className="row justify-content-center">
                     <div className="col-md-12-m-t-md">
                         {/* mostramos el valos del state en money */}
